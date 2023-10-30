@@ -17,6 +17,10 @@ test:  ## Locally run unit tests
 test-watch:  ## Locally run unit tests in watch mode
 	@PIPENV_VERBOSITY=-1 pipenv run ptw
 
+.PHONY: example
+example:  ## Run example
+	@PIPENV_VERBOSITY=-1 pipenv run python texttest_fixture.py
+
 .PHONY: lint
 lint:  ## Lint and fix code
 	@PIPENV_VERBOSITY=-1

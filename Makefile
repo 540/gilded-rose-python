@@ -17,6 +17,10 @@ test:  ## Locally run unit tests
 test-watch:  ## Locally run unit tests in watch mode
 	@PIPENV_VERBOSITY=-1 pipenv run ptw
 
+.PHONY: test-cov
+test-cov:  ## Locally run unit tests with test coverage
+	@PIPENV_VERBOSITY=-1 pipenv run pytest --cov
+
 .PHONY: example
 example:  ## Run example
 	@PIPENV_VERBOSITY=-1 pipenv run python texttest_fixture.py

@@ -11,6 +11,7 @@ pytest-watch = "*"
 black = "*"
 pylint = "*"
 pyhamcrest = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.12.0"

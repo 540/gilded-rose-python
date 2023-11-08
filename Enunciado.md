@@ -1,7 +1,12 @@
 # Especificaciones de la Rosa Dorada (Gilded Rose)
+<p align ="center">
+<img src="GildedRose.jpeg" alt="Gilded Rose Shop" style="width:400px">
+</p>
 
 Bienvenido al equipo de **Gilded Rose**.
 Como quizá sabes, somos una pequeña posada ubicada estratégicamente en una prestigiosa ciudad, atendida por la amable **Allison**.
+
+
 También compramos y vendemos mercadería de alta calidad.
 Por desgracia, nuestra mercadería va bajando de calidad a medida que se aproxima la fecha de venta.
 

@@ -102,3 +102,11 @@ class TestGildedRose:
         gilded_rose.update_quality()
 
         assert_that(item[0].quality, is_(0))
+    
+    def test_the_quality_of_conjured_items_degrades_twice_as_fast_as_normal_items(self):
+        item = [Item("Conjured Mana Cake", 10, 10)]
+        gilded_rose = GildedRose(item)
+
+        gilded_rose.update_quality()
+
+        assert_that(item[0].quality, is_(8))

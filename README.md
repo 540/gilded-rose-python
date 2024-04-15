@@ -5,7 +5,7 @@
 
 ## Comandos útiles
 
-- Es necesario tener instalado `pipenv` para poder lanzar el entorno
+- Es necesario tener instalado `pdm` para poder lanzar el entorno
 
 - ```make setup``` para instalar las dependencias.
 - ```make test``` para ejecutar los test

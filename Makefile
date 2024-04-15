@@ -7,26 +7,26 @@ help:  ## Show this help
 
 .PHONY: setup
 setup: ## Setup local environment
-	@pipenv install --dev
+	@pdm install
 
 .PHONY: test
 test:  ## Locally run unit tests
-	@PIPENV_VERBOSITY=-1 pipenv run pytest
+	@pdm run pytest
 
 .PHONY: test-watch
 test-watch:  ## Locally run unit tests in watch mode
-	@PIPENV_VERBOSITY=-1 pipenv run ptw
+	@pdm run ptw .
 
 .PHONY: test-cov
 test-cov:  ## Locally run unit tests with test coverage
-	@PIPENV_VERBOSITY=-1 pipenv run pytest --cov
+	@pdm run pytest --cov
 
 .PHONY: example
 example:  ## Run example
-	@PIPENV_VERBOSITY=-1 pipenv run python texttest_fixture.py
+	@pdm run texttest_fixture.py
 
 .PHONY: lint
 lint:  ## Lint and fix code
 	@PIPENV_VERBOSITY=-1
-	@pipenv run black --target-version=py312 .
-	@pipenv run pylint --recursive=y .
+	@pdm run black --target-version=py312 .
+	@pdm run pylint --recursive=y ./src ./tests

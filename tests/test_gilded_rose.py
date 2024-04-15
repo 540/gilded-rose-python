@@ -1,6 +1,7 @@
 from hamcrest import assert_that, is_
 from src.gilded_rose import Item, GildedRose
 
+
 class TestGildedRose:
     def test_foo(self):
         items = [Item("foo", 0, 0)]

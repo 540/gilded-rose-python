@@ -1,0 +1,30 @@
+[project]
+name = "gilded-rose-python"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Gorka Moreno Asín", email = "gorka@540deg.com"},
+]
+dependencies = []
+requires-python = ">=3.12.0"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[[tool.pdm.source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "pylint",
+    "pyhamcrest",
+    "pytest-cov",
+    "pytest-watcher>=0.4.2",
+]
